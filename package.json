@@ -1,6 +1,6 @@
 {
   "name": "calculate-aspect-ratio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate aspect ratio provided a width and height.",
   "license": "MIT",
   "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
