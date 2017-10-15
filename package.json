@@ -1,7 +1,7 @@
 {
   "name": "calculate-aspect-ratio",
   "version": "0.1.1",
-  "description": "Calculate aspect ratio provided a width and height.",
+  "description": "A simple utility function, and command line utility, for calculating an aspect ratio based on width and height.",
   "license": "MIT",
   "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
   "repository": "ryanhefner/calculate-aspect-ratio",
