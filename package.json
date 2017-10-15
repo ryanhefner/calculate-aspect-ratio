@@ -1,0 +1,64 @@
+{
+  "name": "calculate-aspect-ratio",
+  "version": "0.1.0",
+  "description": "Calculate aspect ratio provided a width and height.",
+  "license": "MIT",
+  "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
+  "repository": "ryanhefner/calculate-aspect-ratio",
+  "bugs": {
+    "url": "https://github.com/ryanhefner/calculate-aspect-ratio/issues"
+  },
+  "homepage": "https://github.com/ryanhefner/calculate-aspect-ratio#readme",
+  "files": [
+    "index.js",
+    "es",
+    "src",
+    "umd"
+  ],
+  "directories": {
+    "lib": "/src"
+  },
+  "bin": {
+    "aspectratio": "./cli.js"
+  },
+  "main": "index.js",
+  "module": "es/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "clean": "rm -f index.js && rm -rf es && rm -rf umd",
+    "prebuild": "npm run clean",
+    "build": "node ./tools/build.js",
+    "watch": "babel ./src -d . --ignore __tests__ --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "node ./tools/build.js",
+    "push-release": "git push origin master && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "gzip-size": "^4.0.0",
+    "pretty-bytes": "^4.0.2",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.3.1"
+  },
+  "keywords": [
+    "aspect ratio",
+    "aspect",
+    "ratio",
+    "calculate",
+    "utility",
+    "cli",
+    "command line"
+  ]
+}
