@@ -10,6 +10,7 @@
   },
   "homepage": "https://github.com/ryanhefner/calculate-aspect-ratio#readme",
   "files": [
+    "cli.js",
     "index.js",
     "es",
     "src",
