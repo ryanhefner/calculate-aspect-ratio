@@ -1,7 +1,7 @@
 export const gcd = (a, b) => {
-  return !b
-    ? a
-    : gcd(b, a % b);
+  return b
+    ? gcd(b, a % b)
+    : a;
 };
 
 const aspectRatio = (width, height)  => {
