@@ -90,6 +90,17 @@ $ aspectratio 2880 1800    // Output -> Aspect ratio: 8:5
 
 ```
 
+## Need an easy way to calculate aspect ratios?
+
+After making `calculate-aspect-ratio`, I realized that in addition to the CLI
+tool, it might be nice to make a site that makes it easy for non-developers – 
+and developers alike – to review and calculate various aspect ratios, as well
+as reference common device resolutions. So, I made a handy tool that does just
+that, offering a visual way to calculate and reference aspect ratios. I hope
+you find it useful😀
+
+Check out: [https://aspectrat.io](https://aspectrat.io)
+
 ## License
 
 [MIT](LICENSE) © [Ryan Hefner](https://www.ryanhefner.com)
